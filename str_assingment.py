@@ -3,11 +3,10 @@ YBS401-2021-fall-2
 Ödev kapsamında yapmanız gereken:
 aşağıdaki fonksiyonların içeriklerini düzeltmenizdir.
 hazırlayan @aucan
-
-Öğrenci Ad Soyad=
-Öğrenci No=
-Bölüm=
-Sınıf=
+Öğrenci Ad Soyad=Mehmet Ali Karakaş     
+Öğrenci No=2017507057   
+Bölüm=YBS
+Sınıf=4.Sınıf
 '''
 
 def format_string():
@@ -17,14 +16,18 @@ def format_string():
     olacak şekilde eksik kısımları doldurmanızdır. (1 puan)
     Sadece #------**------ işareti ile belirtilen 
     kısımlar arasını değiştiriniz. 
-
     text değişkenini string format fonksiyonu ile doldurmanız beklenmektedir.
     '''
     name = "Ali"
     surname = "Yılmaz"
     birth = 2001
     #-------**-----------
-    #kodunuzu bu yorum satırını silerek buraya yazınız, diğer kısımları değiştirmeyiniz.
+    
+    age=2021-birth
+    text="Adı:{},Soyadı:{},Yaşı:{}".format(name,surname,age)
+    
+    
+    
     #-------**-----------
     return text
 
@@ -36,7 +39,6 @@ def concat_string():
     olacak şekilde eksik kısımları doldurmanızdır. (1 puan)
     Sadece #------**------ işareti ile belirtilen 
     kısımlar arasını değiştiriniz. 
-
     text değişkeni içerisini str1 str2 str3 değişkenlerini uygun hale getirip birleştirerek doldurmanız beklenmektedir.
     Küçük BÜYÜK harfe, boşluklara, str+number hatasına ve birleştirme sırasına dikkat ediniz.
     '''
@@ -44,7 +46,12 @@ def concat_string():
     str2 = "    ekim cumhuriyet bayramımız    "
     str3 = 29
     #-------**-----------
-    #kodunuzu bu yorum satırını silerek buraya yazınız, diğer kısımları değiştirmeyiniz.
+    
+    a=str2.strip()
+    b=str1.strip()
+    c=str(str3)
+    text="{} {} {}".format(c.title(),a.title(),b.title())
+
     #-------**-----------
     return text
 
@@ -56,7 +63,6 @@ def slice_string():
     olacak şekilde eksik kısımları doldurmanızdır. (1 puan)
     Sadece #------**------ işareti ile belirtilen 
     kısımlar arasını değiştiriniz. 
-
     text değişkeni içerisini numbers aplhabets signs değişkenlerini uygun hale getirip birleştirerek doldurmanız beklenmektedir.
     Küçük BÜYÜK harfe ve birleştirme sırasına dikkat ediniz.
     Slicing Strings bölümünde öğrendiğiniz gibi yapmanız gerekmektedir. 
@@ -67,7 +73,13 @@ def slice_string():
     alphabets = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     signs = ".,!'^+$%&/()=?*-_"
     #-------**-----------
-    #kodunuzu bu yorum satırını silerek buraya yazınız, diğer kısımları değiştirmeyiniz.
+    
+    a=alphabets.lower()
+    text=a[3:5]+alphabets[5:6]+signs[2:3]+alphabets[13:14]+signs[2:3]+numbers[5:8]+signs[7:10]+signs[16:]
+    
+    
+    
+    
     #-------**-----------
     return text
 
@@ -80,7 +92,6 @@ def replace_string():
     olacak şekilde eksik kısımları doldurmanızdır. (1 puan)
     Sadece #------**------ işareti ile belirtilen 
     kısımlar arasını değiştiriniz. 
-
     text değişkeni içerisini first_text,searchv,replacev değişkenlerini uygun hale getirip doldurmanız beklenmektedir.
     Küçük BÜYÜK harfe dikkat ediniz.
     Replace Strings bölümünde öğrendiğiniz gibi yapmanız gerekmektedir.  
@@ -89,7 +100,11 @@ def replace_string():
     searchv = "çukurova" #aranan ifade
     replacev = "korkut ata" #değişecek ifade
     #-------**-----------
-    #kodunuzu bu yorum satırını silerek buraya yazınız, diğer kısımları değiştirmeyiniz.
+    
+    
+    a=replacev.title()
+    text=first_text.replace("Çukurova",a)
+    
+    
     #-------**-----------
     return text
-
